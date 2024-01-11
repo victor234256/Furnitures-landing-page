@@ -10,6 +10,7 @@
     --main-color: #e3e8e4;
     --primary-color: #363636;
     --main-font: 'Playfair Display', serif;
+    --span-color: rgb(226, 148, 14);
  }
  nav{
     display: flex;
@@ -221,7 +222,7 @@
  .card.card-fill .star{
     width: 10px;
     height: 10px;
-    background-color: var(--primary-color);
+    background-color: var(--span-color);
     border-radius: 100%;
     padding: 15px;
     position: absolute;
