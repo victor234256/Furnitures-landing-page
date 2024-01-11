@@ -1,0 +1,249 @@
+/* Css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+ 
+ :root{
+    --main-color: #e3e8e4;
+    --primary-color: #363636;
+    --main-font: 'Playfair Display', serif;
+ }
+ nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 10px;
+ }
+ ul li{
+    display: inline;
+    list-style-type: none;
+ }
+ ul li a{
+    text-decoration: none;
+    color: #000;
+    margin-inline-start: 4rem;
+ }
+ ul li a:hover{
+    border-block-end: 2px solid var(--primary-color);
+    padding-block-end: 10px;
+ }
+ .btn-fill{
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+ }
+
+ .btn-outline{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-inline-start: 20px;
+ }
+
+ header{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .content-container{
+    margin-inline-start: 6rem;
+ }
+ .main-heading{
+    font-size: 4rem;
+    font-family: var(--main-font);
+    color: #0000004f;
+    margin-block-end: 2rem;
+ }
+ .main-heading span{
+    color: rgb(226, 148, 14);
+ }
+ .primary-heading{
+    max-width: 500px;
+    font-family: sans-serif;
+    line-height: 25px;
+    margin-block-end: 2rem;
+ }
+ .img-container{
+    width: 500px;
+    height: 500px;
+    background: var(--main-color);
+    border-radius: 100%;
+    text-align: center;
+ }
+ .img-container img{
+    margin-block-start: -50px;
+ }
+
+ .popularity{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+ .popularity div{
+    margin-inline-end: 5rem;
+ }
+ .popularity div h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #34343e;
+    font-family: var(--main-font);
+ }
+ .popularity div p{
+    color: #34343e;
+    font-family: sans-serif;
+
+ }
+
+ .products-heading{
+    text-align: center;
+    margin-block-start: 10rem;
+    margin-block-end: 5rem;
+    font-size: 4rem;
+    color: #0000004f;
+ }
+
+ .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 50px;
+ }
+ .product .product-img-layer{
+    background: var(--main-color);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    padding: 20px;
+  
+ }
+ .product .product-img-layer .img{
+    width: 200px;
+    height: 200px;
+
+ }
+ .product .product-img-layer .img-1{
+    background: url(images/chair-with-cat.png);
+    background-size: cover;
+    background-position: center;
+ }
+ .product .product-img-layer .img-2{
+    background: url(images/executive-chair-2.png);
+    background-size: cover;
+    background-position: center;
+ }
+ .product .product-img-layer .img-3{
+    background: url(images/studio-chair.png);
+    background-size: cover;
+    background-position: center;
+ }
+ .product-content{
+    background-color: var(--primary-color);
+    padding: 27px;
+    text-align: center;
+    padding-block-end: 50px;
+    color: #fff;
+ }
+ .product-content .product-name{
+    font-family: sans-serif;
+    margin-block-end: 10px;
+
+ }
+ .btn-container-2{
+    text-align: center;
+    margin-block-end: 20px;
+
+ }
+ .btn-container-2 button{
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-inline-start: 20px;
+    margin-block-start: 20px;
+ }
+
+ .why-us{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-block-start: 10rem;
+ }
+ .why-us .img-layer{
+    width: 380px;
+    height: 380px;
+    background-color: var(--main-color);
+    border-radius: 100%;
+ }
+
+ .why-us .img-layer .img{
+    width: 380px;
+    height: 380px;
+    background: url(images/chair-with-cat.png);
+    background-size: cover;
+    background-position: center;
+
+ }
+ .why-us .cards{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+ }
+ .card{
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    margin-block-start: 40px;
+    border-radius: 5px;
+ }
+ .card.card-fill{
+    background: #e3e8e490;
+    position: relative;
+
+ }
+ .card.card-fill .star{
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    padding: 15px;
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    align-items: center;
+    color: #fff;
+
+ }
+ .card h1{
+    color: #000;
+    font-size: 17px;
+    font-family: sans-serif;
+ }
+ .card p{
+    color: #999;
+    font-size: 15px;
+    font-family: sans-serif;
+
+ }
+
+
